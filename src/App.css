@@ -1,0 +1,30 @@
+.navbar-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+.navbar-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}

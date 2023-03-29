@@ -1,0 +1,250 @@
+/*Display GRID */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar__toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navbar__toggle:focus,
+.navbar__toggle:hover {
+  outline: none;
+}
+
+.navbar__toggle-label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navbar__toggle-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("menu-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+/*Display FLEX */
+/* CSS */
+/*
+
+/*
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar__toggle {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.navbar__toggle:focus,
+.navbar__toggle:hover {
+  outline: none;
+}
+
+.navbar__toggle-label {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.navbar__toggle-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__toggle-icon::before,
+.navbar__toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__toggle-icon::before {
+  top: -6px;
+}
+
+.navbar__toggle-icon::after {
+  bottom: -6px;
+}
+
+.navbar__toggle[aria-expanded="true"] .navbar__toggle-icon {
+  background-color: transparent;
+}
+
+.navbar__toggle[aria-expanded="true"] .navbar__toggle-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar__toggle[aria-expanded="true"] .navbar__toggle-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.navbar__nav-links {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar__nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .navbar__nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navbar__nav-link:hover {
+    color: #666;
+  }
+
+  .navbar__nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+*/
+
+/*
+// scss
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    &-label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &-icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url("menu-icon.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 10px;
+    }
+  }
+
+  &__nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+*/
